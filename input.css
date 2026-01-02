@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@config "./tailwind.config.js";
+
+@source "./**/*.{html,js,ts,jsx,tsx}";
+
+.link {
+    @apply text-standart_a hover:scale-[1.1] active:scale-[0.95] transition-transform duration-200
+}
