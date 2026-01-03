@@ -7,3 +7,14 @@
 .link {
     @apply text-standart_a hover:scale-[1.1] active:scale-[0.95] transition-transform duration-200
 }
+@layer base {
+    @font-face {
+        font-family: 'Oddval';
+        src: local('Oddval SemiBold'), local('Oddval-SemiBold'),
+        url('/fonts/Oddval-SemiBold.woff2') format('woff2'),
+        url('/fonts/Oddval-SemiBold.woff') format('woff'),
+        url('/fonts/Oddval-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-display: swap;
+    }
+}
