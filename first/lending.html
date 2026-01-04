@@ -5,9 +5,9 @@
         <meta charset="UTF-8">
         <link href="/output.css" rel="stylesheet">
     </head>
-    <body>
-        <div class="min-w-max-[1200px,1900px] bg-gray-200">
-            <header class="fixed grid grid-cols-3 min-w-[1200px] items-center p-4 mx-auto w-full bg-gray-200 z-10">
+    <body class="overflow-x-hidden">
+        <div class="bg-gray-200">
+            <header class="fixed grid grid-cols-3 items-center p-4 mx-auto w-full bg-gray-200 z-10">
                 <!-- left -->
                 <div class="flex gap-2">
                     <a class="font-bold link">Авторские туры</a>
@@ -48,7 +48,7 @@
                             <h2 class="text-5xl font-bold">About us</h2>
                             <p class="text-3xl">Какоооооой тооооооооо очень длииииииныыыыый тееееееееекс с прааааааавоооооо оооот пуууууунктииииирааааа</p>
                             <p class="text-3xl">Какоооооой тооооооооо очень длииииииныыыыый тееееееееекс с прааааааавоооооо оооот пуууууунктииииирааааа</p>
-                            <a class="p-2 cursor-pointer select-none rounded-full border-2 text-center border-black bg-transparent text-black text-3xl font-semibold active:scale-[0.96] active:bg-white transition-transform duration-200">Связаться</a>  
+                            <a class="px-4 py-2 cursor-pointer select-none rounded-2xl text-center bg-yellow-400 text-black text-3xl font-semibold active:scale-[0.96] active:bg-gray-300 transition-transform duration-200">Связаться</a>  
                         </div>
                         <img src="/first/photo/manonmount.jpg" alt="manonmount" class="w-full max-w-none h-auto object-contain">
                         <div class="w-full aspect-video col-span-full mb-24">
@@ -63,6 +63,346 @@
                     </main>
                 </div>
             </section>
+            <section>
+                <div class="p-4 pt-0 w-full h-full flex gap-6">
+                    <div class="flex flex-col items-center gap-2">
+                        <svg class="shrink-0" width="48px" height="48px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" id="Слой_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M6,0C3.2385864,0,1,2.2385864,1,5s2.5,5,5,7c2.5-2,5-4.2385864,5-7S8.7614136,0,6,0z M6,7  C4.8954468,7,4,6.1045532,4,5s0.8954468-2,2-2s2,0.8954468,2,2S7.1045532,7,6,7z" fill="#e83333"/></svg>
+                        <div class="flex-1 w-[clamp(1px,0.2vw,5px)] bg-[repeating-linear-gradient(to_bottom,black_0_18px,transparent_18px_36px)]"></div>
+                    </div>
+                    <main class="relative w-full box-border mb-12">
+                        <div class="flex justify-between items-center max-w-[calc(100%-64px)] mb-4">
+                            <h2 class="text-5xl font-semibold">Adventure Program</h2>
+                            <p class="text-3xl border-b-4 border-yellow-400">Every season different from the past</p>
+                        </div>
+                        <nav class="mb-4 flex justify-between max-w-[calc(100%-64px)]">
+                            <div class="flex gap-4">
+                                <div>
+                                    <input type="radio" name="slider-nav" id="g1" class="peer sr-only" checked>
+                                    <label for="g1" class="px-4 py-2 text-2xl rounded-2xl cursor-pointer bg-gray-300 peer-checked:bg-yellow-400">Summer</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="slider-nav" id="g2" class="peer sr-only">
+                                    <label for="g2" class="px-4 py-2 text-2xl rounded-2xl cursor-pointer bg-gray-300 peer-checked:bg-yellow-400">Autumn</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="slider-nav" id="g3" class="peer sr-only">
+                                    <label for="g3" class="px-4 py-2 text-2xl rounded-2xl cursor-pointer bg-gray-300 peer-checked:bg-yellow-400">Winter</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="slider-nav" id="g4" class="peer sr-only">
+                                    <label for="g4" class="px-4 py-2 text-2xl rounded-2xl cursor-pointer bg-gray-300 peer-checked:bg-yellow-400">Spring</label>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <button id="prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-11 active:text-yellow-400 transition-transform duration-150">
+                                    <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button id="next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-11 active:text-yellow-400 transition-transform duration-150">
+                                    <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </nav>
+                        <div id="slider" class="flex gap-6 overflow-x-auto scroll-smooth snap-x no-scrollbar">
+                            
+                            <!--SUMMER-->
+
+                            <div class="slider-group flex gap-6">
+                                <article class="art">
+                                    <img src="/first/photo/art/1.jpg" alt="picture-1">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+
+                                <article class="art">
+                                    <img src="/first/photo/art/2.jpg" alt="picture-2">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+
+                                <article class="art">
+                                    <img src="/first/photo/art/3.jpg" alt="picture-3">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+
+                                <article class="art">
+                                    <img src="/first/photo/art/4.jpg" alt="picture-4">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+
+                                <article class="art">
+                                    <img src="/first/photo/art/5.jpg" alt="picture-5">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+
+                                <article class="art">
+                                    <img src="/first/photo/art/6.jpg" alt="picture-6">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!--AUTUMN-->
+
+                            <div class="slider-group flex gap-6">
+                                <article class="art">
+                                    <img src="/first/photo/art/Autumn/1.webp" alt="picture-1">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Autumn/2.webp" alt="picture-2">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Autumn/3.webp" alt="picture-3">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Autumn/4.webp" alt="picture-4">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Autumn/5.webp" alt="picture-5">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Autumn/6.webp" alt="picture-6">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!--WINTER-->
+
+                            <div class="slider-group flex gap-6">
+                                <article class="art">
+                                    <img src="/first/photo/art/Winter/1.webp" alt="picture-1">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Winter/2.webp" alt="picture-2">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Winter/3.webp" alt="picture-3">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Winter/4.webp" alt="picture-4">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Winter/5.webp" alt="picture-5">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Winter/6.webp" alt="picture-6">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!--SPRING-->
+
+                            <div class="slider-group flex gap-6">
+                                <article class="art">
+                                    <img src="/first/photo/art/Spring/1.webp" alt="picture-1">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Spring/2.webp" alt="picture-2">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Spring/3.webp" alt="picture-3">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Spring/4.webp" alt="picture-4">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Spring/5.webp" alt="picture-5">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                                <article class="art">
+                                    <img src="/first/photo/art/Spring/6.webp" alt="picture-6">
+                                    <div>
+                                    <h3>что-то красивое</h3>
+                                    <p>описание чего-то прекрасного и очень красивого невообразимого</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="mt-6 h-[2px] bg-gray-200">
+                            <div
+                            id="progress"
+                            class="h-full bg-yellow-400 w-0 transition-[width] duration-150"
+                            ></div>
+                        </div>
+                    </main>
+                </div>
+            </section>
         </div>
     </body>
+    <script>
+        const slider = document.getElementById('slider');
+        const progress = document.getElementById('progress');
+
+        const buttons = document.querySelectorAll('nav input[name="slider-nav"]');
+        const groups = document.querySelectorAll('.slider-group');
+
+        function showGroup(index) {
+            groups.forEach((group, i) => {
+                group.style.display = i === index ? 'flex' : 'none';
+            });
+
+            // сбрасываем скролл и прогресс
+            slider.scrollLeft = 0;
+            requestAnimationFrame(updateProgress);
+        }
+
+        function updateProgress() {
+            const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+            if (maxScroll <= 0) {
+                progress.style.width = '100%';
+                return;
+            }
+
+            const percent = (slider.scrollLeft / maxScroll) * 100;
+            progress.style.width = `${percent}%`;
+        }
+
+        slider.addEventListener('scroll', updateProgress);
+
+        // стартовое состояние
+        showGroup(0);
+
+        // переключение сезонов
+        buttons.forEach((btn, i) => {
+            btn.addEventListener('change', () => showGroup(i));
+        });
+
+
+
+
+        // стрелки
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+
+        // величина шага (карточка + gap)
+        function getScrollStep() {
+            const card = slider.querySelector('.art');
+            if (!card) return slider.clientWidth;
+            const gap = parseInt(getComputedStyle(slider).columnGap || 24);
+            return card.offsetWidth + gap;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            slider.scrollBy({
+                left: -getScrollStep(),
+                behavior: 'smooth'
+            });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            slider.scrollBy({
+                left: getScrollStep(),
+                behavior: 'smooth'
+            });
+        });
+
+        function updateArrows() {
+            prevBtn.disabled = slider.scrollLeft <= 0;
+            nextBtn.disabled =
+                slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1;
+        }
+
+        slider.addEventListener('scroll', () => {
+            updateProgress();
+            updateArrows();
+        });
+
+        // после смены сезона
+        function showGroup(index) {
+            groups.forEach((group, i) => {
+                group.style.display = i === index ? 'flex' : 'none';
+            });
+
+            slider.scrollLeft = 0;
+
+            requestAnimationFrame(() => {
+                updateProgress();
+                updateArrows();
+            });
+        }
+    </script>
 </html>
