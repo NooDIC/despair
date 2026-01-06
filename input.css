@@ -28,6 +28,13 @@
 }
 
 
+.sec3 {
+  @apply overflow-hidden aspect-square 
+}
+.sec3 img {
+  @apply h-full w-full object-cover object-left
+}
+
 @layer utilities {
   .no-scrollbar {
     scrollbar-width: none;
