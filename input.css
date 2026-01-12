@@ -5,7 +5,7 @@
 @source "./**/*.{html,js,ts,jsx,tsx}";
 
 .link {
-    @apply text-standart_a cursor-pointer select-none hover:scale-[1.1] active:scale-[0.95] transition-transform duration-200
+    @apply text-standart_a cursor-pointer select-none hover:scale-[1.05] active:scale-[0.95] transition-transform duration-200
 }
 /* карточка */
 .art {
@@ -29,7 +29,7 @@
 
 
 .sec3 {
-  @apply overflow-hidden aspect-square 
+  @apply overflow-hidden aspect-square active:scale-[0.95] transition-transform duration-100
 }
 .sec3 img {
   @apply h-full w-full object-cover object-left
